@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,400;1,700&display=swap');
+
+
+* {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+}
+
+body {
+       font-family: 'Open Sans';
+       line-height: 1.5em;
+       font-size: 18px;
+       overflow-x: hidden;
+}
+
+.container {
+       max-width: 1440px;
+       margin: 0 auto;
+       width: 90%;
+       padding: 0 20px;
+}
+
+h1, h2, h3 {
+       line-height: 1.2em;
+       margin: 10px 0;
+       font-family: 'poppins';
+}
+
+img {
+       width: 100%;
+}
+a{
+       display: inline-block;
+       color: #333;
+       text-decoration: none;
+}
+
+ul  {
+       list-style: none;
+}
+.flex {
+       display: flex;
+       justify-content: space-between;
+       height: 100%;
+       align-items: center;
+}
+
+.grid {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       align-items: center;
+}
+.hero-content {
+       margin-top: 40px;
+       padding-top: 20px;
+       height: 100%;
+}
+.hero-text {
+       padding-right: 50px;
+       animation: left_slide 2s ease-in-out ;
+}
+.hero-img {
+       animation: right_slide 2s ease-in-out ;
+}
+.hero-text h1 {
+       font-size: 3rem;
+       
+}
+.hero-text p {
+       padding: 10px 0;
+}
+
+.btn {
+       padding: 20px 70px;
+       border:none;
+       border-radius: 50px;
+       background: hsl(322, 100%, 66%);
+       margin: 20px 0;
+       cursor: pointer;
+       transition: all .2s ease-in-out;
+       color: #fff;
+       font-size: 18px;
+}
+nav .btn {
+       background: #fff;
+       box-shadow: 0 0 10px rgba(0,0,0,0.3);
+       padding: 15px  80px;
+       color: #333;
+}
+.btn a {
+       color: #fff;
+}
+
+.btn:hover {
+       opacity: .7;
+}
+.hero {
+       background-image: url(./bg-hero-desktop.svg);
+       background-color: hsl(193, 100%, 96%);
+       padding: 30px 0;
+       height: 100vh;
+}
+
+.card {
+       box-shadow: 0 0 10px rgba(0,0,0,0.3);
+       border-radius: 15px;
+}
+.info {
+       padding: 30px 0;
+       padding-top: 70px;
+       margin: 50px 0;
+}
+
+.info-content {
+       margin: 40px 0;
+       padding: 30px;
+       padding-right: 30px;
+       transition: transform .3s ease-in-out;
+}
+.info-content:hover {
+       transform: translateY(-5px);
+}
+
+.info-text {
+       padding: 0 30px;
+       padding-left: 90px;
+}
+
+.card:nth-child(2) .info-img {
+       order: -1;
+       padding-left: 90px;
+}
+
+.info-text h2, .info-text p {
+       padding: 5px 0;
+       
+}
+.info-img {
+       width: 80%;
+}
+
+.promo {
+       padding: 40px;
+       text-align: center;
+       width: 70%;
+       margin: 0 auto;
+       transform: translateY(200px);
+       background: #fff;
+}
+.promo .btn {
+       padding:30px 100px;
+       color: #fff;
+       font-size: 18px;
+       margin-top: 50px;
+}
+
+.promo h2 {
+       font-size: 2.5rem;
+}
+.footer {
+       background-color: hsl(192, 100%, 9%);
+       padding: 40px 20px;
+       color: #fff;
+       padding-top: 150px;
+}
+
+footer a {
+       color: #fff;
+       padding: 10px 0;
+}
+footer a:hover {
+       text-decoration: underline;
+}
+
+.footer-icon-contents {
+       width: 400px;
+}
+.footer .footer-logo {
+       width: 25%;
+       margin: 30px 0;
+}
+.footer-icon-contents  img {
+       width: 20px;
+       position: absolute;
+       top: 30%;
+       left: 0;
+}
+.footer li.flex{
+       justify-content: left;
+       position: relative;
+       
+}
+.footer-flex-cont.flex {
+       align-items: flex-start;
+       gap: 30px;
+} 
+.footer ul {
+       justify-self: center;
+}
+
+.footer-icon-contents li > p, .footer-icon-contents li a {
+       margin-left: 40px;       
+}
+
+.social-icons.flex {
+       align-items: flex-start;
+       gap: 10px;
+}
+.social-icons li{
+       border-radius: 100px;
+       display: inline-block;
+       border: 1px solid #fff;
+}
+
+.social-icons a {
+     
+       padding: 10px;
+}
+
+.social-icons a:hover {
+       text-decoration: none;
+       color: hsl(322, 100%, 66%);
+}
+small {
+       text-align: right;
+}
+
+/* Animations */
+@keyframes left_slide {
+       0% {
+              transform: translateX(-400px);
+       }
+       100% {
+              transform: translateX(0);
+       }
+}
+
+@keyframes right_slide {
+       0% {
+              transform: translateX(400px);
+       }
+       100% {
+              transform: translateX(0);
+       }
+}
+
+
+/* Media Queries for responsive design */
+@media (max-width:768px ) {
+       .grid {
+              grid-template-columns: 1fr;
+       }
+       .info .flex,.footer .flex {
+              flex-direction: column;
+       }
+       body {
+              text-align: center;
+       }
+       .hero {
+              height: fit-content;
+       }
+       .hero-content {
+              padding-top: 70px;
+       }
+       .hero-img {
+              padding-top: 30px;
+       }
+       .container {
+              padding:0 20px ;
+              width: 95%;
+       }
+
+       .hero-text p{
+              padding: 0 30px;
+       }
+       nav img {
+              width: 80%;
+       }
+       .hero-text {
+              padding: 0;
+       }
+       .info-content {
+              padding: 70px;
+       }
+       .card .info-img {
+              order: -1;
+       }
+       .info-text {
+              padding: 30px 0;
+       }
+       .info-img {
+              padding: 0;
+       }
+       .card:nth-child(2) .info-img {
+              padding-left: 0;
+       }
+       .promo {
+              width: 100%;
+       }
+
+       .promo .btn {
+              padding: 20px 40px;
+       }
+       .promo h2 {
+              font-size: 1.5rem;
+       }
+       .footer {
+              text-align: left;
+       }
+       .footer li.flex {
+              justify-content: left !important;
+              align-items:flex-start;
+       }
+       .footer-icon-contents {
+              width: auto;
+              margin-bottom: 40px;
+
+       }
+       .footer-icon-contents p {
+              margin: 0;
+       }
+       
+       .social-icons {
+              flex-direction: row !important;
+              align-self: center;
+              margin-top: 60px;
+       }
+       footer small p {
+              text-align: center;
+              margin-top: 30px;
+              font-size: 10px;
+       }
+       .footer .container {
+              padding: 0;
+       }
+       .footer-logo {
+              width: 40% !important;
+       }
+}
+
+
+
+
+
