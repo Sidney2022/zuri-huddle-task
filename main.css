@@ -252,11 +252,12 @@ small {
 
 
 /* Media Queries for responsive design */
-@media (max-width:768px ) {
+@media screen and (max-width:768px ) {
        .grid {
               grid-template-columns: 1fr;
        }
        .info .flex,.footer .flex {
+              gap: 0;
               flex-direction: column;
        }
        body {
@@ -264,9 +265,10 @@ small {
        }
        .hero {
               height: fit-content;
+              padding-top: 15px;
        }
        .hero-content {
-              padding-top: 70px;
+              padding-top: 30px;
        }
        .hero-img {
               padding-top: 30px;
@@ -277,7 +279,7 @@ small {
        }
 
        .hero-text p{
-              padding: 0 30px;
+              padding: 0 10px;
        }
        nav img {
               width: 80%;
@@ -287,6 +289,9 @@ small {
        }
        .info-content {
               padding: 70px;
+       }
+       .card {
+              padding: 20px;
        }
        .card .info-img {
               order: -1;
@@ -313,6 +318,9 @@ small {
        .footer {
               text-align: left;
        }
+       footer .flex {
+              gap: 0;
+       }
        .footer li.flex {
               justify-content: left !important;
               align-items:flex-start;
@@ -329,11 +337,11 @@ small {
        .social-icons {
               flex-direction: row !important;
               align-self: center;
-              margin-top: 60px;
+              margin-top: 30px;
        }
        footer small p {
               text-align: center;
-              margin-top: 30px;
+              margin-top: 15px;
               font-size: 10px;
        }
        .footer .container {
@@ -344,7 +352,20 @@ small {
        }
 }
 
+@media screen and (max-width:600px) {
+       .hero-content {
+              padding-top: 30px;
+              margin-top: 0;
+       }
+       .hero-content h1 {
+              font-size: 2.3rem;
+       }
 
-
-
+       nav .btn{
+              padding: 10px 20px;
+       }
+       nav img {
+              /* width: 50%; */
+       }
+}
 
