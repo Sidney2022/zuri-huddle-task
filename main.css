@@ -283,7 +283,13 @@ small {
               padding: 0 10px;
        }
        nav img {
-              width: 80%;
+              width: 60%;
+       }
+       .nav-img {
+              display: flex;
+              align-items: start;
+              
+              
        }
        .hero-text {
               padding: 0;
