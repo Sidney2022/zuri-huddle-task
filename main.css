@@ -208,7 +208,7 @@ footer a:hover {
 
 .social-icons.flex {
        align-items: flex-start;
-       gap: 10px;
+       gap: 10px !important;
 }
 .social-icons li{
        text-align: center;
@@ -268,13 +268,14 @@ small {
               padding-top: 15px;
        }
        .hero-content {
-              padding-top: 30px;
+              padding-top: 10px;
+              margin-top: 20px;
        }
        .hero-img {
               padding-top: 30px;
        }
        .container {
-              padding:0 20px ;
+              padding:0  ;
               width: 95%;
        }
 
@@ -358,14 +359,27 @@ small {
               margin-top: 0;
        }
        .hero-content h1 {
-              font-size: 2.3rem;
+              font-size: 2.2rem;
        }
 
-       nav .btn{
-              padding: 10px 20px;
-       }
        nav img {
-              /* width: 50%; */
+              flex: 20%;
+       }
+       nav .btn {
+              width: 40%;
+              padding: 10px 15px;
        }
 }
 
+@media screen and (max-width:375px) {
+       
+
+       nav .btn {
+              flex: 50%;
+       }
+       nav.flex {
+              gap: 20px;
+       }
+      
+
+}
